@@ -534,10 +534,13 @@ span{
    }
 }
 
-@media (max-width:450) {
-
+@media (max-width:450px) {
     html{
         font-size:50%;
+    }
+
+    header{
+        max-width: 85%;
     }
 
 }
