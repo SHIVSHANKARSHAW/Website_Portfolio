@@ -247,20 +247,20 @@
       <h2 class="heading">Contact <span>Me !!</span></h2>
       <br />
       <form
-        action="https://formsubmit.co/el/shivshankarshaw2003@gmail.com"
-        method="POST"
+        onsubmit="sendMail(); reset(); return false;"
       >
         <div class="input">
-          <input type="text" placeholder="Full Name" />
-          <input type="email" placeholder="Enter your Email" />
+          <input type="text" id="name" placeholder="Full Name" />
+          <input type="email" id="email" placeholder="Enter your Email" />
         </div>
         <br />
         <div class="input">
-          <input type="number" placeholder="Contact Number" />
-          <input type="text" placeholder="Subject" />
+          <input type="number" id="number" placeholder="Contact Number" />
+          <input type="text" id="subject" placeholder="Subject" />
         </div>
         <br />
         <textarea
+          id="message"
           cols="30"
           rows="10"
           placeholder="Leave a message here ..."
