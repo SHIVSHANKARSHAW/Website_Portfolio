@@ -90,3 +90,21 @@ const typed = new Typed('.multiple',{
     backdelay:1500,
     loop:true
 });
+
+// smtp Form
+
+function sendMail(){
+    Email.send({
+        Host : "smtp.elasticemail.com",
+        Username : "mightguy460@gmail.com",
+        Password : "Onetwothree#123",
+        To : 'shivshankarshaw2003@gmail.com',
+        From : document.getElementById('email').value,
+        Subject: document.getElementById('subject').value ,
+        Body : "Name : " + document.getElementById('name').value +
+                "<br> Number : " + document.getElementById('number').value +
+                "<br> Message : " + document.getElementById('message').value
+    }).then(
+      message => alert("Thanks for response !")
+    );
+}
