@@ -247,16 +247,17 @@
       <h2 class="heading">Contact <span>Me !!</span></h2>
       <br />
       <form
-        onsubmit="sendMail(); reset(); return false;"
-      >
+  action="https://formspree.io/f/mqkvyjpw"
+  method="POST"
+>
         <div class="input">
-          <input type="text" id="name" placeholder="Full Name" />
-          <input type="email" id="email" placeholder="Enter your Email" />
+          <input type="text" id="name" name="Name : " placeholder="Full Name" />
+          <input type="email" id="email" name="Email : " placeholder="Enter your Email" />
         </div>
         <br />
         <div class="input">
-          <input type="number" id="number" placeholder="Contact Number" />
-          <input type="text" id="subject" placeholder="Subject" />
+          <input type="number" id="number" name="Number : " placeholder="Contact Number" />
+          <input type="text" id="subject" name="Subject : " placeholder="Subject" />
         </div>
         <br />
         <textarea
@@ -264,6 +265,7 @@
           cols="30"
           rows="10"
           placeholder="Leave a message here ..."
+          name="Message : "
         ></textarea>
         <br />
         <br />
@@ -298,7 +300,6 @@
 
     <script src="https://unpkg.com/scrollreveal"></script>
     <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
-    <script src="https://smtpjs.com/v3/smtp.js"></script>
     <script src="index.js"></script>
   </body>
 </html>
