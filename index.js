@@ -84,7 +84,7 @@ ScrollReveal().reveal('p, .btn,.s_c,.slider-container', { origin : 'right' })
 // Typed JS
 
 const typed = new Typed('.multiple',{
-    strings:['Frontend Developer ! ','Content Writer ! ','CSE Student ! '],
+    strings:['MERN Stack Developer ! ','Content Writer ! ','CSE Student ! '],
     typespeed:70,
     backspeed:80,
     backdelay:1500,
